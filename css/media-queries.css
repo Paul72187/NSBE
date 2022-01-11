@@ -1,0 +1,153 @@
+/* These styles will be applied on devices that have a width of at least 768px */
+@media screen and (min-width: 768px) {
+    .logo {
+      justify-content: flex-start;
+    }
+  
+    .cards {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+      padding: 0;
+      width: 85%;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width: 30rem;
+    }
+  
+    .card:first-of-type {
+      margin-bottom: 0;
+    }
+  
+    .card-image {
+      width: 30rem;
+      height: 26rem;
+    }
+  
+    .votes-number-LABOUR,
+    .votes-number-CONSERVATIVE,
+    .votes-number-LIBERAL_DEMOCRAT,
+    .votes-number-GREEN,
+    .votes-number-REFORM_PARTY,
+    .votes-number-PATIENT_SUPPORT_TRUST,
+    .votes-number-FREEDOM_ALLIANCE,
+    .votes-number-OFFICIAL_MONSTER_RAVING_LOONY_PARTY,
+    .votes-number-HERITAGE_PARTY,
+    .votes-number-THE_PARTY_PARTY,
+    .votes-number-THE_RECLAIM_PARTY,
+    .votes-number-REJOIN_EU,
+    .votes-number-UKIP,
+    .votes-number-INDEPENDENT, {
+      font-size: 3.5rem;
+    }
+  
+    .votes-text {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  
+    .candidate-name {
+      font-size: 2rem;
+    }
+  
+    .candidate-party {
+      font-size: 1.1rem;
+    }
+  
+    .card-btn {
+      font-size: 2rem;
+    }
+  }
+  
+  /* These styles will be applied on devices that have a width of at least 1024px */
+  @media screen and (min-width: 1024px) {
+    .cards {
+      width: 100%;
+    }
+  
+    .card:hover {
+      transform: translateY(-2rem);
+    }
+  
+    .card:hover .btn-LABOUR,
+    .card:hover .btn-CONSERVATIVE,
+    .card:hover .btn-LIBERAL_DEMOCRAT,
+    .card:hover .btn-GREEN,
+    .card:hover .btn-REFORM_PARTY,
+    .card:hover .btn-PATIENT_SUPPORT_TRUST,
+    .card:hover .btn-FREEDOM_ALLIANCE,
+    .card:hover .btn-OFFICIAL_MONSTER_RAVING_LOONY_PARTY,
+    .card:hover .btn-HERITAGE_PARTY,
+    .card:hover .btn-THE_PARTY_PARTY,
+    .card:hover .btn-RECLAIM_PARTY,
+    .card:hover .btn-REJOIN_EU,
+    .card:hover .btn-UKIP,
+    .card:hover .btn-INDEPENDENT, {
+      font-size: 2.5rem;
+    }
+  
+    .btn-LABOUR:hover {
+      background: var(--btn-red-hover);
+    }
+  
+    .btn-CONSERVATIVE:hover {
+      background: var(--btn-light-blue-hover);
+    }
+
+    .btn-LIBERAL_DEMOCRAT:hover {
+      background: var(--btn-orange-hover);
+    }
+
+    .btn-GREEN:hover {
+      background: var(--btn-green-hover);
+    }
+
+    .btn-REFORM_PARTY:hover {
+      background: var(--btn-dark-green-hover);
+    }
+
+    .btn-PATIENT_SUPPORT_TRUST:hover {
+      background: var(--btn-brown-hover);
+    }
+
+    .btn-FREEDOM_ALLIANCE:hover {
+      background: var(--btn-grey-hover);
+    }
+
+    .btn-OFFICIAL_MONSTER_RAVING_LOONY_PARTY:hover {
+      background: var(--btn-black-hover);
+    }
+
+    .btn-HERITAGE_PARTY:hover {
+      background: var(--btn-pink-hover);
+    }
+
+    .btn-THE_PARTY_PARTY:hover {
+      background: var(--btn-gold-hover);
+    }
+
+    .btn-RECLAIM_PARTY:hover {
+      background: var(--btn-silver-hover);
+    }
+
+    .btn-REJOIN_EU:hover {
+      background: var(--btn-dark-blue-hover);
+    }
+
+    .btn-UKIP:hover {
+      background: var(--btn-purple-hover);
+    }
+
+    .btn-INDEPENDENT:hover {
+      background: var(--btn-light-green-hover);
+    }
+  }
+  
+  /* These styles will be applied on devices that have a width of at least 1400px */
+  @media screen and (min-width: 1400px) {
+    .cards {
+      width: 100%;
+    }
+  }
