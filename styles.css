@@ -1,0 +1,293 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+:root {
+    --black: #1b1d29;
+    --white: #ffffff;
+    --bg-overlay: RGB(253, 255, 206, 0.96);
+    --btn-red: #e4003b;
+    --btn-red-hover: #e4003b;
+    --btn-light-blue: #0087DC;
+    --btn-light-blue-hover: #0087dc;
+    --btn-orange: #faa61a;
+    --btn-orange-hover: #faa61a;
+    --btn-green: #6AB023;
+    --btn-green-hover: #6AB023;
+    --btn-turquoise: #12B6CF;
+    --btn-turquoise-hover: #12B6CF;
+    --btn-saddle-brown: #8B4513;
+    --btn-saddle-brown-hover: #8B4513;
+    --btn-medium-violet-red: #CC1280;
+    --btn-medium-violet-red-hover: #CC1280;
+    --btn-yellow: #FFF000;
+    --btn-yellow-hover: #FFF000;
+    --btn-denim: #246BCE;
+    --btn-denim-hover: #246BCE;
+    --btn-black: #000000;
+    --btn-black-hover: #000000;
+    --btn-grenadier: #C03F31;
+    --btn-grenadier-hover: #C03F31;
+    --btn-smalt: #003399;
+    --btn-smalt-hover: #003399;
+    --btn-purple: #70147A;
+    --btn-purple-hover: #70147A;
+    --btn-aquamarine: #7FFFD4;
+    --btn-aquamarine-hover: #7FFFD4;
+    --shadow: #cccea7;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html,
+  #app {
+    height: 100%;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /******* 
+   * APP *
+   *******/
+  
+  #app {
+    background: var(--bg-overlay);
+    overflow-y: scroll;
+  }
+  
+  .app-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../images/american-flag.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  /********** 
+   * HEADER *
+   **********/
+  
+  header {
+    background: var(--black);
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* NORTH SHROPSHIRE BY-ELECTION 2021 */
+  .logo h1 {
+    font-size: 3rem;
+  }
+  
+  /* Star */
+  .logo img {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+  
+  /******** 
+   * MAIN *
+   ********/
+  
+  main {
+    height: 100%;
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  
+  /* Card */
+  .card {
+    width: 25rem;
+    border: 2px solid var(--black);
+    overflow: hidden;
+    box-shadow: 15px 15px 6px var(--shadow);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .card:first-of-type {
+    margin-bottom: 5rem;
+  }
+  
+  /* Card image */
+  .card-image {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+  
+  /* Card information */
+  .card-info {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--white);
+    color: var(--black);
+    padding: 2rem 0;
+  }
+  
+  .candidate-votes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .votes-number-LABOUR,
+  .votes-number-CONSERVATIVE,
+  .votes-number-LIBERAL_DEMOCRAT,
+  .votes-number-GREEN,
+  .votes-number-REFORM_PARTY,
+  .votes-number-PATIENT_SUPPORT_TRUST,
+  .votes-number-FREEDOM_ALLIANCE,
+  .votes-number-OFFICIAL_MONSTER_RAVING_LOONY_PARTY,
+  .votes-number-HERITAGE_PARTY,
+  .votes-number-THE_PARTY_PARTY,
+  .votes-number-RECLAIM_PARTY,
+  .votes-number-REJOIN_EU,
+  .votes-number-UKIP,
+  .votes-number-INDEPENDENT {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .votes-text {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Line */
+  .line {
+    width: 0.1rem;
+    background: var(--black);
+  }
+  
+  /* Candidate info */
+  .candidate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .candidate-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .candidate-party {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Card button */
+  .card-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    color: var(--white);
+    cursor: pointer;
+    border-top: 2px solid var(--black);
+  }
+  
+  .btn-LABOUR,
+  .btn-CONSERVATIVE,
+  .btn-LIBERAL_DEMOCRAT,
+  .btn-GREEN,
+  .btn-REFORM_PARTY,
+  .btn-PATIENT_SUPPORT_TRUST,
+  .btn-FREEDOM_ALLIANCE,
+  .btn-OFFICIAL_MONSTER_RAVING_LOONY_PARTY,
+  .btn-HERITAGE_PARTY,
+  .btn-THE_PARTY_PARTY,
+  .btn-RECLAIM_PARTY,
+  .btn-REJOIN_EU,
+  .btn-UKIP,
+  .btn-INDEPENDENT, {
+    transition: all 0.5s ease;
+  }
+  
+  .btn-LABOUR {
+    background: var(--btn-red);
+  }
+  
+  .btn-CONSERVATIVE {
+    background: var(--btn-light-blue);
+  }
+
+  .btn-LIBERAL_DEMOCRAT {
+    background: var(--btn-orange);
+  }
+
+  .btn-GREEN {
+    background: var(--btn-green);
+  }
+
+  .btn-REFORM_PARTY {
+    background: var(--btn-turquoise);
+  }
+
+  .btn-PATIENT_SUPPORT_TRUST {
+    background: var(--btn-saddle-brown);
+  }
+
+  .btn-FREEDOM_ALLIANCE {
+    background: var(--btn-medium-violet-red);
+  }
+
+  .btn-OFFICIAL_MONSTER_RAVING_LOONY_PARTY {
+    background: var(--btn-yellow);
+  }
+
+  .btn-HERITAGE_PARTY {
+    background: var(--btn-denim);
+  }
+
+  .btn-THE_PARTY_PARTY {
+    background: var(--btn-black);
+  }
+
+  .btn-RECLAIM_PARTY {
+    background: var(--btn-grenadier);
+  }
+
+  .btn-REJOIN_EU {
+    background: var(--btn-smalt);
+  }
+
+  .btn-UKIP {
+    background: var(--btn-purple);
+  }
+
+  .btn-INDEPENDENT {
+    background: var(--btn-aquamarine);
+  }
